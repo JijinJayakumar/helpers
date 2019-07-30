@@ -23,7 +23,6 @@
             "src/helpers/debug_helpers.php"
         ]
         
-    },
-    "minimum-stability": "stable",
-    "require": {}
+    }
+   
 }
