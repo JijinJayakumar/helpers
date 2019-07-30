@@ -1,0 +1,28 @@
+{
+    "name": "jjin/helpers",
+    "description": "A simple collection of helper functions file for day-to-day tasks PHP web developers",
+    "type": "library",
+    "keywords": ["php", "helpers"],
+    "homepage": "https://jijin.in/codewebapp",
+    "license": "Mozilla Public License 2.0",
+    "authors": [
+        {
+            "name": "JJiN",
+            "email": "hello@jijin.in"
+        }
+    ],
+    "autoload": {
+        "files": [
+            "src/helpers/string_helpers.php",
+            "src/helpers/array_helpers.php",
+            "src/helpers/date_time_helpers.php",
+            "src/helpers/file_helpers.php",
+            "src/helpers/session_helpers.php",
+            "src/helpers/pdo_helpers.php",
+            "src/helpers/debug_helpers.php"
+        ]
+        
+    },
+    "minimum-stability": "stable",
+    "require": {}
+}
