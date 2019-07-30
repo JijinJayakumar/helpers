@@ -12,6 +12,7 @@
         }
     ],
     "autoload": {
+        
         "files": [
             "src/helpers/string_helpers.php",
             "src/helpers/array_helpers.php",
