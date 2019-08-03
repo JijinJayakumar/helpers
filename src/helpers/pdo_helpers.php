@@ -1,4 +1,11 @@
 <?php
 /**
- * @category Pdo helpers
+ * 
+ * Pdo helpers
+ * 
  */
+
+ if (!function_exists('test')) {
+
+ }
+

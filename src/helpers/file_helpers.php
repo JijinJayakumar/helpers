@@ -1,6 +1,6 @@
 <?php
 /**
- * @category File helpers
+ * File helpers
  */
 
  if (!function_exists('folderCheck')) {
@@ -51,6 +51,38 @@ if (!function_exists('fileRemove')) {
 
 
  if (!function_exists('fileUpload')) {
+
+function fileUpload($key='',$file=''){
+    // Count # of uploaded files in array
+$total = count($_FILES[$key]['name']);
+
+// Loop through each file
+for( $i=0 ; $i < $total ; $i++ ) {
+
+  //Get the temp file path
+  $tmpFilePath = $_FILES[$key]['tmp_name'][$i];
+  $fileName = $_FILES[$key]["name"][$i];
+$ext = pathinfo($fileName, PATHINFO_EXTENSION);
+
+$fileName = basename($fileName, $ext);
+$newFileName = $fileName . time() . "." . $ext;
+
+
+  //Make sure we have a file path
+  if ($tmpFilePath != ""){
+    //Setup our new file path
+    $newFilePath = $file."/".$newFileName;
+    
+
+    //Upload the file into the temp dir
+    if(move_uploaded_file($tmpFilePath, $newFilePath)) {
+
+      //Handle other code here
+
+    }
+  }
+}
+ }
 
  }
 

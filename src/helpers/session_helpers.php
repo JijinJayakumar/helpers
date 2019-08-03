@@ -1,4 +1,9 @@
 <?php
 /**
- * @category Session helpers
+ * Session helpers
  */
+
+if (!function_exists('test')) {
+
+}
+

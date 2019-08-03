@@ -1,8 +1,6 @@
 <?php
-use phpDocumentor\Reflection\Types\Boolean;
-
 /**
- * @category Debug helpers
+ * Debug helpers
  */
 
 if (!function_exists('json_output')) {
@@ -37,10 +35,18 @@ if (!function_exists('json_output')) {
 }
 
 if (!function_exists('d_echo')) {
-    function d_echo($var, $die = '0')
+    /**
+     * d_echo
+     *
+     * @param  mixed $var
+     * @param  mixed $die
+     *
+     * @return void
+     */
+    function d_echo(string $var, int $die = 0)
     {
         echo $var;
-        if ($die == '1') {
+        if ($die == 1) {
             die('die function started, set to zero');
         }
     }
@@ -92,10 +98,12 @@ if (!function_exists('j_log')) {
 }
 
 if (!function_exists('false_response')) {
+   
     /**
      * false_response
      *
      * @param  mixed $message
+     * @param  mixed $code
      *
      * @return void
      */
@@ -111,10 +119,12 @@ if (!function_exists('false_response')) {
     }
 }
 if (!function_exists('true_response')) {
+   
     /**
      * true_response
      *
      * @param  mixed $message
+     * @param  mixed $code
      *
      * @return void
      */

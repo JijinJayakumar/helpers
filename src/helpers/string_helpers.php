@@ -1,6 +1,6 @@
 <?php
 /**
- * @category String helpers
+ * String helpers
  */
 
 if (!function_exists('randomString')) {

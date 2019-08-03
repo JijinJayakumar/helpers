@@ -1,6 +1,6 @@
 <?php
 /**
- * @category Time related helpers
+ * Time related helpers
  */
 
 

@@ -1,6 +1,7 @@
 <?php
 /**
- * @category Array helpers
+ * a basic array helper
+ *  
  */
 
 if (!function_exists('nullRemove')) {
