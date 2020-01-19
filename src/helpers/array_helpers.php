@@ -47,7 +47,7 @@ if (!function_exists('arrayOrderBy')) {
  * @param  mixed $order
  *
  * @return array
- * orderBy([[],[],[]],'key','desc');
+ * arrayOrderBy([[],[],[]],'key','desc');
  */
     function arrayOrderBy(array $items, $attr, $order)
     {
