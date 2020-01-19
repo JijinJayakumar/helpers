@@ -1,7 +1,7 @@
 <?php
 /**
  * a basic array helper
- *  
+ *
  */
 
 if (!function_exists('nullRemove')) {
@@ -38,5 +38,30 @@ if (!function_exists('checkIsArrayValueEmpty')) {
     }
 }
 
+if (!function_exists('arrayOrderBy')) {
+/**
+ * arrayOrderBy
+ *
+ * @param  mixed $items
+ * @param  mixed $attr
+ * @param  mixed $order
+ *
+ * @return array
+ * orderBy([[],[],[]],'key','desc');
+ */
+    function arrayOrderBy(array $items, $attr, $order)
+    {
+        $sortedItems = [];
+        foreach ($items as $item) {
+            $key = is_object($item) ? $item->{$attr} : $item[$attr];
+            $sortedItems[$key] = $item;
+        }
+        if ($order === 'desc') {
+            krsort($sortedItems);
+        } else {
+            ksort($sortedItems);
+        }
 
-
+        return array_values($sortedItems);
+    }
+}
