@@ -1,5 +1,8 @@
+[![Latest Stable Version](https://poser.pugx.org/jjin/helpers/v/stable)](https://packagist.org/packages/jjin/helpers)
+[![Total Downloads](https://poser.pugx.org/jjin/helpers/downloads)](https://packagist.org/packages/jjin/helpers)
+[![Latest Unstable Version](https://poser.pugx.org/jjin/helpers/v/unstable)](https://packagist.org/packages/jjin/helpers)
+[![License](https://poser.pugx.org/jjin/helpers/license)](https://packagist.org/packages/jjin/helpers)
 
-  
 
 # **String Helpers**
 
